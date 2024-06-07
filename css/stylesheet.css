@@ -1,0 +1,1811 @@
+@charset "utf-8";
+	
+	/* ===== start reset css ===== */
+		html, body, div, span, applet, object, iframe, table, caption,
+		tbody, tfoot, thead, tr, th, td, del, dfn, em, font, img, ins,
+		kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
+		acronym, address, big, cite, code, dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend {
+		vertical-align: baseline;
+		outline: 0;
+		padding: 0 !important;
+		margin: 0;
+		border: 0;
+		}
+		:focus {
+		outline: 0;
+		}
+		body {
+		background: white;
+		line-height: 1;
+		color: black;
+		}
+		table {
+		border-collapse: separate;
+		border-spacing: 0;
+		}
+		caption, th, td {
+		font-weight: normal;
+		text-align: left;
+		}
+		blockquote:before, blockquote:after, q:before, q:after {
+		content: "";
+		}
+		blockquote, q {
+		quotes: "" "";
+		}
+	/* ===== end reset css ===== */
+		
+		/* ==================== ==================== */
+		
+	/* ===== start all page's style's ===== */
+		html {
+			font-size: 14px;
+		}
+		
+		body {
+			overflow-x: hidden;
+		}
+		
+		* {
+			font-family: 'Open Sans', sans-serif;
+			line-height: 1.1em;
+			
+			box-sizing: border-box;	/* ===== opera/ie 8+ ===== */
+			-webkit-box-sizing: border-box;	/* =====chrome/safari, outros webkit ===== */
+			-moz-box-sizing: border-box;	/* ===== firefox e outros gecko ===== */
+			
+			transition: ease-in-out 0.3s;
+			-webkit-transition: ease-in-out 0.3s;
+			-moz-transition: ease-in-out 0.3s;
+			-ms-transition: ease-in-out 0.3s;
+			-o-transition: ease-in-out 0.3s;
+		}
+		
+		img,
+		embed,
+		object,
+		video,
+		iframe {
+			max-width: 100%;
+		}
+		
+		.wrapper {
+			width: 100%;
+		}
+		
+		.container {
+			max-width: 640px;
+			width: 100%;
+			margin: 0 auto;
+		}
+		
+		.index {
+			max-width: 640px;
+			width: 100%;
+			margin: 0 auto;
+		}
+		
+		.float-R {
+			float: right;
+		}
+		
+		.float-L {
+			float: left;
+		}
+		
+		.clearfix {
+			clear: both;
+		}
+		
+		.margin-B-5pc {
+			margin-bottom: 5%;
+		}
+		
+		.fancybox-wrap {
+			position: absolute !important;
+			top: 3% !important;
+			left: 6% !important;
+		}
+		
+		.fancybox-inner {
+			width: 100% !important;
+			height: 100% !important;
+			margin: 0 auto !important;
+		}
+		
+		.fancybox-close {
+			top: -14px !important;
+			right: -10px !important;
+		}
+	/* ===== end all page's style's ===== */
+		
+		/* ==================== ==================== */
+		
+	/* ===== start index ===== */
+		
+		.wrapper .container .index {
+			max-width: 640px;
+			width: 100%;
+			margin: 0 auto;
+			
+			overflow: hidden;
+		}
+		
+		/* ===== start header ===== */
+			.wrapper .container .index header {
+				max-width: 640px;
+				width: 100%;
+				margin: 0 auto;
+			}
+			
+			.wrapper .container .index header .top {
+				position: fixed;
+				z-index: 999;
+				top: 0;
+				
+				
+				max-width: 640px;
+				width: 100%;
+				
+				background: url('../imgs/header-top-bg.jpg') no-repeat center center;
+				background-size: cover;
+				
+				padding: 1.428571428571429em;	/* ===== padding: 20px; / 14px; ===== */
+			}
+			
+			.wrapper .container .index header .top button {
+				font-size: 0.9285714285714286em;	/* ===== font-size: 13px; / 14px; ===== */
+				font-weight: 800;
+				text-transform: uppercase;
+				text-align: center;
+				
+				background: none;
+				border: none;
+			}
+			
+			.wrapper .container .index header .top button.btn-left {
+				color: #FFFFFF;
+				background: url('../imgs/ebook-form-btn-bg.png') no-repeat center center;
+				background-size: cover;
+				border-radius: 50px;
+				
+				padding: .55em 1.05em 0.75em 1.1em;
+				
+				/* =====
+					color: #216eb2;
+					background: #fff;
+					border-radius: 50px;
+					
+					padding: .55em 1.05em .55em 1.1em;
+				===== */
+			}
+			
+			/* =====
+				.wrapper .container .index header .top button.btn-left:hover {
+					color: #fff;
+					background: #1d5b94;
+				}
+			===== */
+			
+			.wrapper .container .index header .top button.btn-right {
+				color: #fff;
+				background: none;
+				border: 2px solid #fff;
+				border-radius: 50px;
+				
+				padding: .4em 1.05em .4em 1.1em;	/* ===== adjusted by google chrome ===== */
+			}
+			
+			.wrapper .container .index header .top button.btn-right:hover {
+				color: #1d5b94;
+				background: #fff;
+			}
+			
+			.wrapper .container .index header .bottom {
+				position: relative;
+				
+				max-width: 640px;
+				height: 0;
+				overflow: hidden;
+				
+				text-align: center;
+				
+				margin: 8.314285714285714em 2.142857142857143em 3.214285714285714em 2.142857142857143em;	/* ===== margin: 44px 30px 45px 30px; / 14px; ===== */
+				padding-bottom: 16%;				
+			}
+			
+			.wrapper .container .index header .bottom .logo {
+				position: absolute;
+				right: 0;
+				left: 0;
+				
+				width: 100%;
+				height: 100%;
+			}
+		/* ===== end header ===== */
+			
+			/* ==================== ==================== */
+			
+		/* ===== start intro ===== */
+			.wrapper .container .index #intro {
+				position: relative;
+				
+				max-width: 640px;
+				width: 100%;
+				height: 0;
+				margin: 0 auto;
+				
+				margin-bottom: 28.57142857142857em;	/* ===== margin-bottom: 400px; / 14px; ===== */
+				padding-bottom: 132%;
+			}
+			
+			.wrapper .container .index #intro #top {
+				position: absolute;
+				
+				max-width: 640px;
+				width: 100%;
+				height: 100%;
+				margin: 0 auto;
+				overflow: hidden;
+				
+				background: url('../imgs/intro-top-bg.jpg') no-repeat center center;
+				background-size: 100%;
+				
+				text-align: center;
+			}
+			
+			.wrapper .container .index #intro #top header h1 {
+				font-size: 6.140714285714286em;	/* ===== font-size: 85.97px; / 14px; ===== */
+				font-weight: 300;
+				color: #fff;
+				text-transform: uppercase;
+			}
+			
+			.wrapper .container .index #intro #top header h2 {
+				position: relative;
+				top: -50px;
+				
+				font-size: 3.868571428571429em;	/* ===== font-size: 54.16px; / 14px; ===== */
+				font-weight: 800;
+				color: #fff;
+			}
+			
+			.wrapper .container .index #intro #top header h2 strong {
+				position: relative;
+				top: 16px;
+				
+				font-size: 1.953471196454948em;	/* ===== font-size: 105.8px; / 54.16px; ===== */
+				font-weight: 800;
+				letter-spacing: -10px;
+				
+				margin-left: -0.1890359168241966em;	/* ===== margin-left: -20px; / 105.8px; ===== */
+				margin-right: -0.0661625708884688em;	/* ===== margin-right: -7px; / 105.8px; ===== */
+			}
+			
+			.wrapper .container .index #intro #top ul#btns {
+				margin-top: 34%;
+				width: 110%;
+			}
+			
+			.wrapper .container .index #intro #top ul#btns li {
+				display: inline-block;
+				margin: 0 auto;
+				
+				color: #fff;
+				text-align: center;
+				
+				margin-left: -1.785714285714286em;	/* ===== margin-left: -25px; / 14px; ===== */
+			}
+			
+			.wrapper .container .index #intro #top ul#btns li#btn-left {
+				background: rgba(10, 103, 187, 0.8);
+				border-radius: 50%;
+				
+				padding: 3.428571428571429em 2.5em 3.571428571428571em 2.5em !important;	/* ===== padding: 48px 35px 50px 35px; / 14px; ===== */
+			}
+			
+			.wrapper .container .index #intro #top ul#btns li#btn-left h1 {
+				font-size: 2.5em;	/* ===== font-size: 35px; / 14px; ===== */
+				font-weight: 300;
+				
+				margin-top: 0;
+				margin-bottom: 0.4857142857142857em;	/* ===== margin-bottom: 17px; / 35px; ===== */
+			}
+			
+			.wrapper .container .index #intro #top ul#btns li#btn-left h2 {
+				font-size: 1.428571428571429em;	/* ===== font-size: 20px; / 14px; ===== */
+				font-weight: 700;
+				
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+			
+			.wrapper .container .index #intro #top ul#btns li#btn-right {
+				background: rgba(0, 130, 102, 0.8);
+				border-radius: 50%;
+				
+				padding: 3.428571428571429em 1.3em 3.571428571428571em 1.3em !important;	/* ===== padding: 48px 18px 50px 18px; / 14px; ===== */
+			}
+			
+			.wrapper .container .index #intro #top ul#btns li#btn-right h1 {
+				font-size: 2.5em;	/* ===== font-size: 35px; / 14px; ===== */
+				font-weight: 300;
+				
+				margin-top: 0;
+				margin-bottom: 0.4857142857142857em;	/* ===== margin-bottom: 17px; / 35px; ===== */
+			}
+			
+			.wrapper .container .index #intro #top ul#btns li#btn-right h2 {
+				font-size: 1.428571428571429em;	/* ===== font-size: 20px; / 14px; ===== */
+				font-weight: 700;
+				
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+			
+			.wrapper .container .index #intro .video-wrapper {
+				position: relative;
+				
+				max-width: 640px;
+				width: 100%;
+				height: 0;
+				margin: 0 auto;
+				
+				padding-bottom: 116% !important;
+			}
+			
+			.wrapper .container .index #intro #video {
+				max-width: 640px;
+				width: 100%;
+				width: 92.34375%;
+				margin: 0 auto;
+				
+				text-align: center;
+			}
+			
+			.wrapper .container .index #intro #video iframe {
+				margin-bottom: 3.071428571428571em;	/* ===== margin-bottom: 43px; / 14px; ===== */
+			}
+			
+			.wrapper .container .index #intro #video .embed-container {
+				position: relative;
+				
+				max-width: 100%;
+				width: 100%;
+				height: 0;
+				overflow: hidden;
+				
+				margin-bottom: 7%;	/* ===== adjusted by google chrome ===== */
+				padding-bottom: 51.25% !important;
+			}
+			
+			.wrapper .container .index #intro #video .embed-container iframe, .embed-container object, .embed-container embed {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+			
+			.wrapper .container .index #intro #video h1 {
+				font-size: 2.5em;	/* ===== font-size: 35px; / 14px; ===== */
+				font-weight: 600;
+				color: #ec1552;
+				
+				margin-top: 0;
+			}
+			
+			.wrapper .container .index #intro #video h1 strong {
+				font-weight: 800;
+			}
+		/* ===== end intro ===== */
+			
+			/* ==================== ==================== */
+			
+		/* ===== start newsletter ===== */
+			.wrapper .container .index #newsletter-wrapper {
+				position: relative;
+				max-width: 640px;
+				width: 100%;
+				margin: 0 auto;
+				
+				padding-bottom: 150% !important;
+			}
+			
+			.wrapper .container .index #newsletter-wrapper #newsletter {
+				position: absolute;
+				
+				max-width: 640px;
+				width: 100%;
+				height: 100%;
+				margin: 0 auto;
+				
+				background: url('../imgs/ebook-bg.jpg') no-repeat center center;
+				background-size: 100%;
+				
+				padding: 0 1.428571428571429em 0 0.7142857142857143em;	/* ===== padding: 0 20px 0 10px; / 14px; ===== */
+			}
+			
+			.wrapper .container .index #newsletter-wrapper #newsletter #ebook {
+				max-width: 640px;
+				width: 100%;
+				margin: 0 auto;
+				
+				margin-top: 10%;
+				margin-bottom: 3.142857142857143em;	/* ===== margin-bottom: 44px; / 14px; ===== */
+			}
+			
+			.wrapper .container .index #newsletter #signup {
+				max-width: 640px;
+				width: 77.5%;	/* ===== width: 496px; / 640px * 100 ===== */
+				margin: 0 auto;
+				
+				text-align: center;
+			}
+			
+			.wrapper .container .index #newsletter #signup form {}
+			
+			.wrapper .container .index #newsletter #signup form input {
+				width: 100%;
+				
+				font-size: 1.785714285714286em;	/* ===== font-size: 25px; / 14px; ===== */
+				font-weight: 700;
+				color: #5d5155;
+				line-height: normal;
+				
+				background: url('../imgs/ebook-form-input-bg.png') no-repeat center;
+				background-size: cover;
+				border: none;
+				border-radius: 10px;
+				
+				margin-bottom: 0.84em;	/* ===== margin-bottom: 21px; / 25px; ===== */
+				padding: 0.8em 0 1.08em 1.2em;	/* ===== padding: 20px 0px 27px 30px; / 25px; ===== */
+			}
+			
+			.wrapper .container .index #newsletter #signup form input::-webkit-input-placeholder {
+				color: #5d5155;
+			}
+			
+			.wrapper .container .index #newsletter #signup form input::-moz-input-placeholder {
+				color: #5d5155;
+			}
+
+			.wrapper .container .index #newsletter #signup form input:-moz-input-placeholder {
+				color: #5d5155;
+			}
+
+			.wrapper .container .index #newsletter #signup form input::-ms-input-placeholder {
+				color: #5d5155;
+			}
+			
+			.wrapper .container .index #newsletter #signup form button {
+				width: 100%;
+				
+				font-size: 1.785714285714286em;	/* ===== font-size: 25px; / 14px; ===== */
+				font-weight: 700;
+				color: #fff;
+				letter-spacing: 0.10em;
+				line-height: normal;
+				text-transform: uppercase;
+				text-shadow: 2px 2px 0px #487e17;
+				
+				background: url('../imgs/ebook-form-btn-bg.png') no-repeat center;
+				background-size: cover;
+				border: none;
+				border-radius: 10px;
+				
+				padding: 0.8em 0 0.8em 0;	/* ===== padding: 20px 0px 20px 0px; / 25px; ===== */
+			}
+		/* ===== end newsletter ===== */
+			
+			/* ==================== ==================== */
+			
+		/* ===== start hints ===== */
+			.wrapper .container .index #hints-wrapper {}
+			
+			.wrapper .container .index #hints {
+				max-width: 640px;
+				width: 100%;
+				margin: 0 auto;
+			}
+			
+			.wrapper .container .index #hints header {
+				max-width: 640px;
+				width: 100%;
+				
+				text-align: center;
+			}
+			
+			.wrapper .container .index #hints header h1 {
+				font-size: 2.5em;	/* ===== font-size: 35px; / 14px; ===== */
+				font-weight: 600;
+				color: #2781d1;
+			}
+			
+			.wrapper .container .index #hints header h1 strong {
+				font-weight: 800;
+			}
+			
+			.wrapper .container .index #hints #tips-wrapper {
+				position: relative;
+				max-width: 640px;
+				width: 100%;
+				margin: 0 auto;
+				
+				padding-bottom: 80% !important;
+			}
+			
+			.wrapper .container .index #hints #tips-wrapper #tips {
+				position: absolute;
+				
+				max-width: 640px;
+				width: 100%;
+				height: 100%;
+				margin: 0 auto;
+				
+				text-align: center;
+				
+				background: url('../imgs/hints-tips-bg.png') no-repeat center center;
+				background-size: 100%;
+				
+				padding-top: 21% !important;	/* ===== responsive technique with google chrome ===== */
+			}
+			
+			.wrapper .container .index #hints #tips-wrapper #tips h1 {
+				font-size: 35px;
+				font-weight: 300;
+				color: #fff;
+			}
+			
+			.wrapper .container .index #hints #tips-wrapper #tips h1 strong {
+				font-weight: 800;
+			}
+			
+			.wrapper .container .index #hints #food-wrapper {
+				position: relative;
+				max-width: 640px;
+				width: 100%;
+				margin: 0 auto;
+				
+				margin-top: -16%;	/* ===== responsive technique with google chrome ===== */
+				padding-bottom: 80% !important;		/* ===== responsive technique with google chrome ===== */
+			}
+			
+			.wrapper .container .index #hints #food-wrapper #food {
+				position: absolute;
+				
+				max-width: 640px;
+				width: 100%;
+				height: 100%;
+				margin: 0 auto;
+				
+				text-align: center;
+				
+				background: url('../imgs/hints-food-bg.png') no-repeat center center;
+				background-size: 100%;
+				
+				padding-top: 13% !important;	/* ===== responsive technique with google chrome ===== */
+			}
+			
+			.wrapper .container .index #hints #food-wrapper #food h1 {
+				font-size: 35px;
+				font-weight: 300;
+				color: #fff;
+			}
+			
+			.wrapper .container .index #hints #food-wrapper #food h1 strong {
+				font-weight: 800;
+			}
+			
+			.wrapper .container .index #hints #doctors-wrapper {
+				position: relative;
+				max-width: 640px;
+				width: 100%;
+				margin: 0 auto;
+				
+				margin-top: -16%;	/* ===== responsive technique with google chrome ===== */
+				padding-bottom: 89% !important;		/* ===== responsive technique with google chrome ===== */
+			}
+			
+			.wrapper .container .index #hints #doctors-wrapper #doctors {
+				position: absolute;
+				
+				max-width: 640px;
+				width: 100%;
+				height: 100%;
+				margin: 0 auto;
+				
+				text-align: center;
+				
+				background: url('../imgs/hints-doctors-bg.png') no-repeat center center;
+				background-size: 100%;
+				
+				padding-top: 20% !important;	/* ===== responsive technique with google chrome ===== */
+			}
+			
+			.wrapper .container .index #hints #doctors-wrapper #doctors h1 {
+				font-size: 35px;
+				font-weight: 300;
+				color: #fff;
+			}
+			
+			.wrapper .container .index #hints #doctors-wrapper #doctors h1 strong {
+				font-weight: 800;
+			}
+			
+			.wrapper .container .index #hints #meetings-wrapper {
+				position: relative;
+				max-width: 640px;
+				width: 100%;
+				margin: 0 auto;
+				
+				margin-top: -28%;	/* ===== responsive technique with google chrome ===== */
+				padding-bottom: 90% !important;		/* ===== responsive technique with google chrome ===== */
+			}
+			
+			.wrapper .container .index #hints #meetings-wrapper #meetings {
+				position: absolute;
+				
+				max-width: 640px;
+				width: 100%;
+				height: 100%;
+				margin: 0 auto;
+				
+				text-align: center;
+				
+				background: url('../imgs/hints-meetings-bg.png') no-repeat center center;
+				background-size: 100%;
+				
+				padding-top: 18.5% !important;	/* ===== responsive technique with google chrome ===== */
+			}
+			
+			.wrapper .container .index #hints #meetings-wrapper #meetings h1 {
+				font-size: 35px;
+				font-weight: 300;
+				color: #fff;
+			}
+			
+			.wrapper .container .index #hints #meetings-wrapper #meetings h1 strong {
+				font-weight: 800;
+			}
+			
+			.wrapper .container .index #hints #channel-wrapper {
+				position: relative;
+				max-width: 640px;
+				width: 100%;
+				margin: 0 auto;
+				
+				margin-top: -31%;	/* ===== responsive technique with google chrome ===== */
+				padding-bottom: 90% !important;		/* ===== responsive technique with google chrome ===== */
+			}
+			
+			.wrapper .container .index #hints #channel-wrapper #channel {
+				position: absolute;
+				
+				max-width: 640px;
+				width: 100%;
+				height: 100%;
+				margin: 0 auto;
+				
+				text-align: center;
+				
+				background: url('../imgs/hints-channel-bg.png') no-repeat center center;
+				background-size: 100%;
+				
+				padding-top: 18.5% !important;	/* ===== responsive technique with google chrome ===== */
+			}
+			
+			.wrapper .container .index #hints #channel-wrapper #channel h1 {
+				font-size: 35px;
+				font-weight: 300;
+				color: #fff;
+			}
+			
+			.wrapper .container .index #hints #channel-wrapper #channel h1 strong {
+				font-weight: 800;
+			}
+			
+			.wrapper .container .index #hints #footer-wrapper {
+				position: relative;
+				max-width: 640px;
+				width: 100%;
+				margin: 0 auto;
+				
+				margin-top: -22%;
+				padding-bottom: 96% !important;
+			}
+			
+			.wrapper .container .index #hints #footer-wrapper footer {
+				position: absolute;
+				
+				max-width: 640px;
+				width: 100%;
+				height: 100%;
+				margin: 0 auto;
+				
+				background: url('../imgs/hints-footer-bg.png') no-repeat center center;
+				background-size: 100%;
+			}
+		/* ===== end hints ===== */
+			
+			/* ==================== ==================== */
+			
+		/* ===== start media ===== */
+			.wrapper .container .index #media-wrapper {
+				position: relative;
+				max-width: 640px;
+				width: 100%;
+				margin: 0 auto;
+				
+				margin-top: -25%;
+				padding-bottom: 143% !important;
+			}
+			
+			.wrapper .container .index #media-wrapper #media {
+				position: absolute;
+				
+				max-width: 640px;
+				width: 100%;
+				height: 100%;
+				margin: 0 auto;
+				
+				background: url('../imgs/media-bg.png') no-repeat center center;
+				background-size: 100%;
+				
+				padding-top: 18%;
+			}
+			
+			.wrapper .container .index #media-wrapper #media header {
+				max-width: 640px;
+				width: 60%;
+				margin: 0 auto;
+				text-align: center;
+			}
+			
+			.wrapper .container .index #media-wrapper #media ul.content {}
+			
+			.wrapper .container .index #media-wrapper #media ul.content li {
+				position: relative;
+				
+				height: 32.5%;
+				
+				list-style-type: none;
+			}
+			
+			.wrapper .container .index #media-wrapper #media ul.content li h1 {
+				position: absolute;
+				z-index: 1;
+				
+				width: 180px;
+				
+				margin-top: 26%;
+				margin-left: 10%;
+
+				font-size: 35px;
+				font-weight: 300;
+				color: #fff;
+				
+				text-transform: uppercase;
+			}
+			
+			.wrapper .container .index #media-wrapper #media ul.content li h1 strong {
+				font-weight: 700;
+			}
+		/* ===== end media ===== */
+			
+			/* ==================== ==================== */
+			
+		/* ===== start testimonials ===== */
+			.wrapper .container .index #testimonials-wrapper {
+				position: relative;
+				
+				max-width: 640px;
+				width: 100%;
+				margin: 0 auto;
+				
+				margin-top: -15%;
+				padding-bottom: 72% !important;
+			}
+			
+			.wrapper .container .index #testimonials-wrapper #testimonials {
+				position: absolute;
+				
+				max-width: 640px;
+				width: 100%;
+				height: 100%;
+				margin: 0 auto;
+				
+				background: url('../imgs/testimonials-bg.png') no-repeat center center;
+				background-size: 100%;
+				
+				padding: 12% 5% 0px 5%;		/* ===== padding: 18% 31px 0px 31px; / adjusted by google chrome ===== */
+			}
+			
+			.wrapper .container .index #testimonials-wrapper #testimonials .title {
+				max-width: 100%;
+				width: 100%;
+				margin: 0 auto;
+				
+				text-align: center;
+				
+				margin-bottom: 5%;
+			}
+			
+			.wrapper .container .index #testimonials-wrapper #testimonials .title h1 {
+				font-size: 2.142857142857143em;		/* ===== font-size: 30px; / 14px; ===== */
+				font-weight: 400;
+				color: #fff;
+				
+				margin-top: 0;
+			}
+			
+			.wrapper .container .index #testimonials-wrapper #testimonials .title h1 strong {
+				font-weight: 700;
+			}
+			
+			.wrapper .container .index #testimonials-wrapper #testimonials ul.votes {
+				position: relative;
+				z-index: 10;
+				
+				max-width: 71.875%;	/* ===== max-width: 460px; / 640px; * 100 ===== */
+				width: 100%;
+				margin: 0 auto;
+			}
+			
+			.wrapper .container .index #testimonials-wrapper #testimonials ul.votes li {
+				float: left;
+				
+				width: 100%;
+				
+				margin-left: 10px;
+				
+				list-style-type: none;
+			}
+			
+			.wrapper .container .index #testimonials-wrapper #testimonials ul.votes li .thumb {
+				float: left;
+				
+				width: 21%;		/* ===== width: 87px; / adjusted by google chrome ===== */
+				height: 22%;	/* ===== height: 87px; / adjusted by google chrome ===== */
+				overflow: hidden;
+				
+				border: 4px solid #fff;		/* ===== border: 3px solid #ec014d; / 14px; ===== */
+				border-radius: 100%;
+				box-shadow: 0px 1px 1px #000;
+			}
+			
+			.wrapper .container .index #testimonials-wrapper #testimonials ul.votes li .text {
+				float: right;
+				
+				max-width: 74.34782608695652%;	/* ===== max-width: 342px; / 460px; * 100 ===== */
+				
+				margin-top: 2%;		/* ===== margin-top: 25px; / adjusted by google chrome ===== */
+			}
+			
+			.wrapper .container .index #testimonials-wrapper #testimonials ul.votes li .text h1 {
+				font-size: 1.285714285714286em;		/* ===== font-size: 18px; / 14px; ===== */
+				font-weight: 700;
+				color: #fff;
+				
+				margin: 0;
+			}
+			
+			.wrapper .container .index #testimonials-wrapper #testimonials ul.votes li .author {
+				float: left;
+				
+				max-width: 74.34782608695652%;	/* ===== max-width: 342px; / 460px; * 100 ===== */
+				height: 20px;
+				
+				margin: 0.3571428571428571em 0 0 4.8%;		/* ===== margin: 5px 0px 0px 107px; / adjusted by google chrome ===== */
+			}
+			
+			.wrapper .container .index #testimonials-wrapper #testimonials ul.votes li .author span {
+				font-size: 1.071428571428571em;	/* ===== font-size: 15px; / 14px; ===== */
+				font-weight: 400;
+				color: #FBEF5D;
+				
+				margin: 0;
+			}
+			
+			.wrapper .container .index #testimonials-wrapper #testimonials ul.votes .owl-controls .owl-page span {
+				opacity: 1;
+				
+				background: #fff;
+				
+				border: 2px solid #fff;
+				
+				box-shadow: 0px 0px 2px #000;
+				
+				margin: 5 2px;
+			}
+			
+			.wrapper .container .index #testimonials-wrapper #testimonials ul.votes .owl-controls .owl-page.active span {
+				background: #ec014d;
+			}
+		/* ===== end testimonials ===== */
+			
+			/* ==================== ==================== */
+			
+		/* ===== start social networks ===== */
+			.wrapper .container .index #social-wrapper {
+				height: 78%;
+			}
+			
+			.wrapper .container .index #social-wrapper #social {
+				max-width: 640px;
+				width: 100%;
+				margin: 0 auto;
+			}
+			
+			.wrapper .container .index #social-wrapper #social header {
+				max-width: 640px;
+				width: 100%;
+				margin: 0 auto;
+				
+				text-align: center;
+				
+				margin-bottom: 5rem !important;	/* ===== margin-bottom: 80px !important; / 16px ===== */
+			}
+			
+			.wrapper .container .index #social-wrapper #social header h1 {
+				font-size: 2.5em;	/* ===== font-size: 35px; / 14px; ===== */
+				font-weight: 700;
+				color: #e50048;
+				
+				margin-bottom: 0.8285714285714286em;	/* ===== margin-bottom: 29px; / 14px; ===== */
+			}
+			
+			.wrapper .container .index #social-wrapper #social header ul {}
+			
+			.wrapper .container .index #social-wrapper #social header ul li {
+				display: inline-block;
+				
+				width: 14%;
+				
+				list-style-type: none;
+			}
+			
+			.wrapper .container .index #social-wrapper #social header ul li:first-child {
+				margin-left: 0;
+			}
+			
+			.wrapper .container .index #social-wrapper #social header ul li {
+				list-style-type: none;
+			}
+			
+			.wrapper .container .index #social-wrapper #social .content {
+				text-align: center;
+				
+				padding: 0 1.428571428571429em 0 1.428571428571429em !important;	/* ===== padding: 0 20px 0 20px; ===== */
+			}
+			
+			.wrapper .container .index #social-wrapper #social .content #facebook-box {
+				width: 80%;
+				margin: 0 auto;
+				margin-bottom: 5rem !important;	/* ===== margin-bottom: 80px !important; / 16px ===== */
+			}
+			
+			.wrapper .container .index #social-wrapper #social .content #facebook-box #fb-root {
+				display: none;
+			}
+			
+			.wrapper .container .index #social-wrapper #social .content #facebook-box  .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+				width: 100% !important;
+			}
+			
+			.wrapper .container .index #social-wrapper #social .content h1 {
+				font-size: 25px;
+				font-weight: 700;
+				color: #c9b7bc;
+				
+				background: url('../imgs/social-networks-content-h1-bg.png') no-repeat top center;
+				
+				padding-top: 55px !important;
+			}
+			
+			.wrapper .container .index #social-wrapper #social .content h1 a {
+				color: #c9b7bc;
+				text-decoration: none;
+			}
+		/* ===== end social networks ===== */
+			
+			/* ==================== ==================== */
+			
+		/* ===== start footer ===== */
+			/*.wrapper .container .index .footer-wrapper {
+				position: relative;
+				
+				max-width: 640px;
+				width: 100%;
+				margin: 0 auto;
+				
+				padding-bottom: 36% !important;
+			}*/
+			
+			.wrapper .container .index .footer-wrapper footer {
+				z-index: 100;
+				
+				max-width: 640px;
+				width: 100%;
+				margin: 0 auto;
+				
+				background: url('../imgs/footer-bg.jpg') no-repeat center center;
+				background-size: 100%;
+				
+				text-align: center;
+				padding-top: 0%;
+			}
+			
+			.wrapper .container .index .footer-wrapper footer button {
+				width: 50%;	/* ===== adjusted by google chrome ===== */
+				
+				font-size: 30px;
+				font-weight: 700;
+				color: #fff;
+				text-transform: uppercase;
+				text-shadow: 0px 1px 1px #444444;
+				letter-spacing: 0.05em;
+				
+				background: url('../imgs/footer-btn-bg.png') no-repeat center center;
+				background-size: 100%;
+				
+				border: none;
+				
+				padding: 4% 10% 5% 10%;
+			}
+		/* ===== end footer ===== */	
+		
+	/* ===== end index ===== */
+		
+		/* ==================== ==================== */
+		
+	/* ===== start sign-up ===== */
+		
+		.wrapper .container .signup {
+			max-width: 591px;
+			width: 100%;
+			margin: 0 auto;
+		}
+				
+		/* ===== start header ===== */
+			.wrapper .container .signup header {				
+				max-width: 591px;
+				width: 100%;
+				margin: 0 auto;
+				
+				margin-top: 2.071428571428571em;	/* ===== margin-top: 29px; / 14px; ===== */
+				margin-bottom: 7%;	/* ===== adjusted by google chrome ===== */
+			}
+			
+			.wrapper .container .signup header .logo {
+				position: relative;
+				z-index: 1;
+				
+				width: 50%;	/* ===== adjusted by google chrome with technique ===== */
+				
+				margin-left: 5.5%;	/* ===== adjusted by google chrome with technique ===== */
+			}
+			
+			.wrapper .container .signup header .info-wrapper {
+				position: relative;
+				
+				max-width: 591px;
+				width: 100%;
+				margin: 0 auto;
+				
+				margin-top: -28%;	/* ===== adjusted by google chrome with technique ===== */
+				padding-bottom: 70% !important;	/* ===== adjusted by google chrome with technique ===== */
+			}
+			
+			.wrapper .container .signup header .info {
+				position: absolute;
+				
+				max-width: 591px;
+				width: 100%;
+				height: 100%;
+				margin: 0 auto;
+				
+				text-align: center;
+				
+				background: url('../imgs/signup-header-info-bg.jpg') no-repeat center center;
+				background-size: 100%;
+			}
+		/* ===== end header ===== */
+			
+			/* ==================== ==================== */
+			
+		/* ===== start form ===== */
+			.wrapper .container .signup form {				
+				max-width: 591px;
+				width: 83.92554991539763%;	/* ===== width: 496px; / 591px; * 100 ===== */
+				margin: 0 auto;
+			}
+			
+			.wrapper .container .signup form header {
+				text-align: center;
+				
+				margin: 0;
+				margin-bottom: 9%;	/* ===== adjusted by google chrome ===== */
+			}
+			
+			.wrapper .container .signup form header h1 {
+				font-size: 2.5em;	/* ===== font-size: 35px; / 14px; ===== */
+				font-weight: 400;
+				color: #e50048;
+			}
+			
+			.wrapper .container .signup form input {
+				width: 100%;
+				
+				font-size: 1.785714285714286em;	/* ===== font-size: 25px; / 14px; ===== */
+				font-weight: 700;
+				color: #5d5155;
+				line-height: normal;
+				
+				background: url('../imgs/signup-form-input-bg.png') no-repeat;
+				background-size: 100%;
+				
+				border: none;
+				border-radius: 10px;
+				
+				margin-bottom: 5%;	/* ===== adjusted by google chrome ===== */
+				padding: 4% 0 6% 6%;	/* ===== padding: 20px 0 30px 30px; / adjusted by google chrome ===== */
+			}
+			
+			.wrapper .container .signup form input::-webkit-input-placeholder {
+				color: #5d5155;
+			}
+
+			.wrapper .container .signup form input::-moz-input-placeholder {
+				color: #5d5155;
+			}
+
+			.wrapper .container .signup form input:-moz-input-placeholder {
+				color: #5d5155;
+			}
+
+			.wrapper .container .signup form input::-ms-input-placeholder {
+				color: #5d5155;
+			}
+			
+			.wrapper .container .signup form p {
+				font-size: 1.428571428571429em;	/* ===== font-size: 20px; / 14px; ===== */
+				font-weight: 400;
+				color: #5d5155;
+				text-align: center;
+			}
+			
+			.wrapper .container .signup form p strong {
+				font-weight: 600;
+			}
+			
+			.wrapper .container .signup form .day {
+				width: 45%;
+				background-size: cover;
+			}
+			
+			.wrapper .container .signup form label {
+				cursor: auto;
+				
+				width: 100%;
+				
+				font-size: 25px;
+				font-weight: 400;
+				color: #5d5155;
+				
+				margin-bottom: 4%;	/* ===== adjusted by google chrome ===== */
+			}
+			
+			.wrapper .container .signup form button {
+				width: 100%;
+				
+				font-size: 2.142857142857143em;	/* ===== font-size: 30px; / 14px; ===== */
+				font-weight: 700;
+				color: #fff;
+				line-height: normal;
+				text-transform: uppercase;
+				text-shadow: 2px 2px 0px #487e17;
+				
+				background: url('../imgs/ebook-form-btn-bg.png') no-repeat;
+				background-size: 100%;
+				
+				border: none;
+				border-radius: 10px;
+				
+				margin-bottom: 5%;	/* ===== adjusted by google chrome ===== */
+				padding: 3% 0 5% 4%;	/* ===== adjusted by google chrome ===== */
+			}
+			
+			.wrapper .container .signup form img {
+				margin-bottom: 3%;	/* ===== adjusted by google chrome ===== */
+			}
+		/* ===== end form ===== */
+			
+			/* ==================== ==================== */
+			
+		/* ===== start footer ===== */
+			.wrapper .container .signup .footer-wrapper {
+				position: relative;
+				max-width: 591px;
+				width: 100%;
+				margin: 0 auto;
+				
+				margin-top: 7%;	/* ===== margin-top: 41px; / adjusted by google chrome ===== */
+				padding-bottom: 32% !important;	/* ===== adjusted by google chrome with responsive technique ===== */
+			}
+			
+			.wrapper .container .signup .footer-wrapper footer {
+				position: absolute;
+				max-width: 591px;
+				width: 100%;
+				height: 100%;
+				margin: 0 auto;
+				
+				text-align: center;
+				
+				background: url('../imgs/signup-footer-bg.jpg') no-repeat center center;
+				background-size: 100%;
+				
+				padding: 6.7% 0 6.7% 0;	/* ===== padding: 41px 0px 41px 0px; / adjusted by google chrome ===== */
+			}
+			
+			.wrapper .container .signup .footer-wrapper footer h1 {
+				font-size: 1.785714285714286em;	/* ===== font-size: 25px; / 14px; ===== */
+				font-weight: 400;
+				color: #fff;
+				
+				margin: 0;
+				margin-bottom: 2%;	/* ===== margin-bottom: 13px; / adjusted by google chrome ===== */
+			}
+			
+			.wrapper .container .signup .footer-wrapper footer h1 strong {
+				font-weight: 700;
+			}
+			
+			.wrapper .container .signup .footer-wrapper footer h2 {
+				font-size: 2.142857142857143em;	/* ===== font-size: 30px; / 14px; ===== */
+				font-weight: 700;
+				color: #fff;
+				
+				margin: 0;
+				margin-bottom: 2%;	/* ===== margin-bottom: 13px; / adjusted by google chrome ===== */
+			}
+			
+			.wrapper .container .signup .footer-wrapper footer h2 img {
+				width: 6.5%;
+			}
+			
+			.wrapper .container .signup .footer-wrapper footer h3 {
+				font-size: 1.428571428571429em;	/* ===== font-size: 20px; / 14px; ===== */
+				font-weight: 400;
+				color: #fff;
+				
+				margin: 0;
+			}
+		/* ===== end footer ===== */
+		
+	/* ===== end sign-up ===== */
+		
+		/* ==================== ==================== */
+		
+	/* ===== start login ===== */
+		
+		.wrapper .container .login {
+			max-width: 591px;
+			width: 100%;
+			margin: 0 auto;
+		}
+				
+		/* ===== start header ===== */
+			.wrapper .container .login header {				
+				max-width: 591px;
+				width: 100%;
+				margin: 0 auto;
+				
+				margin-top: 2.071428571428571em;	/* ===== margin-top: 29px; / 14px; ===== */
+				margin-bottom: 5.6%;	/* ===== margin-bottom: 33px; / adjusted by google chrome ===== */
+			}
+			
+			.wrapper .container .login header .logo {
+				max-width: 591px;
+				width: 100%;
+				margin: 0 auto;
+				
+				text-align: center;
+				
+				margin-bottom: 5%;	/* ===== margin-bottom: 30px; / adjusted by google chrome ===== */
+			}
+			
+			.wrapper .container .login header .logo img {
+				width: 50%;
+			}
+			
+			.wrapper .container .login header .excerpt-wrapper {
+				position: relative;
+				max-width: 591px;
+				width: 100%;
+				margin: 0 auto;
+				
+				padding-bottom: 17% !important;	/* ===== adjusted by google chrome with responsive technique ===== */
+			}
+			
+			.wrapper .container .login header .excerpt-wrapper .excerpt {
+				position: absolute;
+				
+				max-width: 591px;
+				width: 100%;
+				height: 100%;
+				margin: 0 auto;
+				
+				text-align: center;
+				
+				background: url('../imgs/login-header-excerpt-bg.jpg') no-repeat center center;
+				background-size: 100%;
+				
+				
+				padding-top: 3.5%;	/* ===== padding-top: 21px; / adjusted by google chrome ===== */
+			}
+			
+			.wrapper .container .login header .excerpt-wrapper .excerpt h1 {
+				font-size: 1.785714285714286em;	/* ===== font-size: 25px; / 14px; ===== */
+				font-weight: 400;
+				color: #fff;
+				
+				margin: 0;
+			}
+			
+			.wrapper .container .login header .excerpt-wrapper .excerpt h1 strong {
+				font-weight: 700;
+			}
+		/* ===== end header ===== */
+			
+			/* ==================== ==================== */
+			
+		/* ===== start content ===== */
+			.wrapper .container .login .content {				
+				max-width: 591px;
+				width: 100%;
+				margin: 0 auto;
+			}
+			
+			.wrapper .container .login .content h1 {		
+				font-size: 2.5em;	/* ===== font-size: 35px; / 14px; ===== */
+				font-weight: 400;
+				color: #e50048;
+				text-align: center;
+				
+				margin: 0;
+				margin-bottom: 6%;	/* ===== margin-bottom: 37px; / adjusted by google chrome ===== */
+			}
+			
+			.wrapper .container .login .content form {				
+				max-width: 591px;
+				width: 83.92554991539763%;	/* ===== width: 496px; / 591px; * 100 ===== */
+				margin: 0 auto;
+			}
+			
+			.wrapper .container .login .content form input {
+				width: 100%;
+				
+				font-size: 1.785714285714286em;	/* ===== font-size: 25px; / 14px; ===== */
+				font-weight: 700;
+				color: #5d5155;
+				line-height: normal;
+				
+				background: url('../imgs/signup-form-input-bg.png') no-repeat;
+				background-size: 100%;
+				
+				border: none;
+				border-radius: 10px;
+				
+				margin-bottom: 5%;	/* ===== adjusted by google chrome ===== */
+				padding: 4% 0 6% 6%;	/* ===== padding: 20px 0 30px 30px; / adjusted by google chrome ===== */
+			}
+			
+			.wrapper .container .login .content form input::-webkit-input-placeholder {
+				color: #5d5155;
+			}
+
+			.wrapper .container .login .content form input::-moz-input-placeholder {
+				color: #5d5155;
+			}
+
+			.wrapper .container .login .content form input:-moz-input-placeholder {
+				color: #5d5155;
+			}
+
+			.wrapper .container .login .content form input::-ms-input-placeholder {
+				color: #5d5155;
+			}
+			
+			.wrapper .container .login .content form button {
+				width: 100%;
+				
+				font-size: 2.142857142857143em;	/* ===== font-size: 30px; / 14px; ===== */
+				font-weight: 700;
+				color: #fff;
+				line-height: normal;
+				text-transform: uppercase;
+				text-shadow: 2px 2px 0px #487e17;
+				
+				background: url('../imgs/ebook-form-btn-bg.png') no-repeat;
+				background-size: 100%;
+				
+				border: none;
+				border-radius: 10px;
+				
+				margin-bottom: 5%;	/* ===== adjusted by google chrome ===== */
+				padding: 3% 0 5% 3%;	/* ===== adjusted by google chrome ===== */
+			}
+			
+			.wrapper .container .login .content .form-options {
+				max-width: 591px;
+				width: 100%;
+				margin: 0 auto;
+				
+				text-align:center;
+			}
+			
+			.wrapper .container .login .content .form-options p {
+				cursor: pointer;
+				
+				width: 34%;
+				margin: 0 auto !important;
+				
+				font-size: 1.428571428571429em;	/* ===== font-size: 20px; / 14px; ===== */
+				font-weight: 400;
+				color: #5d5155;
+				text-decoration: none;
+				
+				margin: 0;
+			}
+			
+			.wrapper .container .login .content .form-options p a {
+				color: #5d5155;
+				text-decoration: none;
+			}
+		/* ===== end content ===== */
+			
+			/* ==================== ==================== */
+			
+		/* ===== start footer ===== */
+			.wrapper .container .login .footer-wrapper {
+				position: relative;
+				
+				max-width: 591px;
+				width: 100%;
+				margin: 0 auto;
+				
+				padding-bottom: 66% !important;	/* ===== adjusted by google chrome with responsive technique ===== */
+			}
+			
+			.wrapper .container .login .footer-wrapper footer {
+				position: absolute;
+				
+				max-width: 591px;
+				width: 100%;
+				height: 100%;
+				margin: 0 auto;
+				
+				text-align: center;
+				
+				background: url('../imgs/login-footer-bg.jpg') no-repeat center center;
+				background-size: 100%;
+				
+				padding: 13% 0 0 0;	/* ===== padding: 80px 0px 0px 0px; / adjusted by google chrome ===== */
+			}
+			
+			.wrapper .container .login .footer-wrapper footer h1 {
+				font-size: 18px;
+				font-weight: 400;
+				color: #e50048;
+			}
+			
+			.wrapper .container .login .footer-wrapper footer h1 strong {
+				font-size: 19px;
+				font-weight: 700;
+			}
+			
+			.wrapper .container .login .footer-wrapper footer button {
+				width: 80%;
+				
+				font-size: 2.142857142857143em;	/* ===== font-size: 30px; / 14px; ===== */
+				font-weight: 700;
+				color: #e50048;
+				line-height: normal;
+				text-transform: uppercase;
+				text-shadow: 0px 1px 2px #8C8C8C;
+				
+				background: url('../imgs/login-footer-btn-bg.png') no-repeat;
+				background-size: 100%;
+				
+				border: none;
+				border-radius: 10px;
+				
+				margin-top: 8%;	/* ===== margin-top: 46px; / adjusted by google chrome ===== */
+				padding: 2.5% 0 7% 3%;	/* ===== adjusted by google chrome ===== */
+			}
+		/* ===== end footer ===== */
+		
+	/* ===== end login ===== */
+		
+		/* ==================== ==================== */
+		
+	/* ===== start confirmation ===== */
+		
+		.wrapper .container .confirmation {
+			max-width: 591px;
+			width: 100%;
+			margin: 0 auto;
+		}
+				
+		/* ===== start header ===== */
+			.wrapper .container .confirmation header {				
+				max-width: 591px;
+				width: 100%;
+				margin: 0 auto;
+				
+				margin-top: 2.071428571428571em;	/* ===== margin-top: 29px; / 14px; ===== */
+				margin-bottom: 5.6%;	/* ===== margin-bottom: 33px; / adjusted by google chrome ===== */
+			}
+			
+			.wrapper .container .confirmation header .logo {
+				max-width: 591px;
+				width: 100%;
+				margin: 0 auto;
+				
+				text-align: center;
+				
+				margin-bottom: 5%;	/* ===== margin-bottom: 30px; / adjusted by google chrome ===== */
+			}
+			
+			.wrapper .container .confirmation header .logo img {
+				width: 50%;
+			}
+			
+			.wrapper .container .confirmation header .excerpt-wrapper {
+				position: relative;
+				max-width: 591px;
+				width: 100%;
+				margin: 0 auto;
+				
+				padding-bottom: 80% !important;	/* ===== adjusted by google chrome with responsive technique ===== */
+			}
+			
+			.wrapper .container .confirmation header .excerpt-wrapper .excerpt {
+				position: absolute;
+				
+				max-width: 591px;
+				width: 100%;
+				height: 100%;
+				margin: 0 auto;
+				
+				text-align: center;
+				
+				background: url('../imgs/confirmation-header-excerpt-bg.jpg') no-repeat center center;
+				background-size: 100%;
+				
+				
+				padding-top: 5.5%;	/* ===== padding-top: 34px; / adjusted by google chrome ===== */
+			}
+			
+			.wrapper .container .confirmation header .excerpt-wrapper .excerpt h1 {
+				font-size: 2.142857142857143em;	/* ===== font-size: 30px; / 14px; ===== */
+				font-weight: 700;
+				color: #fff;
+				
+				margin: 0;
+				margin-bottom: 3%;	/* ===== margin-bottom: 16px; / adjusted by google chrome ===== */
+			}
+			
+			.wrapper .container .confirmation header .excerpt-wrapper .excerpt h1 strong {
+				font-weight: 800;
+			}
+			
+			.wrapper .container .confirmation header .excerpt-wrapper .excerpt h2 {
+				font-size: 20px;	/* ===== font-size: 20px; / 14px; ===== */
+				font-weight: 400;
+				color: #fff;
+				
+				margin: 0;
+			}
+			
+			.wrapper .container .confirmation header .excerpt-wrapper .excerpt h2 strong {
+				font-weight: 700;
+			}
+			
+			.wrapper .container .confirmation header .excerpt-wrapper .excerpt h2 a {
+				color: #fff;
+				
+				text-decoration: none;
+			}
+		/* ===== end header ===== */
+			
+			/* ==================== ==================== */
+			
+		/* ===== start banner ===== */
+			.wrapper .container .banner {
+				background: url('../imgs/ebook-form-top-bg.jpg') no-repeat center center;
+				background-size: 100%;
+				
+				padding-bottom: 70%;
+			}
+		/* ===== end banner ===== */
+			
+			/* ==================== ==================== */
+			
+		/* ===== start form ===== */
+			.wrapper .container .confirmation form {				
+				max-width: 591px;
+				width: 83.92554991539763%;	/* ===== width: 496px; / 591px; * 100 ===== */
+				margin: 0 auto;
+			}
+			
+			.wrapper .container .confirmation form header {
+				text-align: center;
+				
+				margin: 0;
+				margin-bottom: 9%;	/* ===== adjusted by google chrome ===== */
+			}
+			
+			.wrapper .container .confirmation form header h1 {
+				font-size: 2.5em;	/* ===== font-size: 35px; / 14px; ===== */
+				font-weight: 400;
+				color: #e50048;
+			}
+			
+			.wrapper .container .confirmation form input {
+				width: 100%;
+				
+				font-size: 1.785714285714286em;	/* ===== font-size: 25px; / 14px; ===== */
+				font-weight: 700;
+				color: #5d5155;
+				line-height: normal;
+				
+				background: url('../imgs/signup-form-input-bg.png') no-repeat;
+				background-size: 100%;
+				
+				border: none;
+				border-radius: 10px;
+				
+				margin-bottom: 5%;	/* ===== adjusted by google chrome ===== */
+				padding: 4% 0 6% 6%;	/* ===== padding: 20px 0 30px 30px; / adjusted by google chrome ===== */
+			}
+			
+			.wrapper .container .confirmation form input::-webkit-input-placeholder {
+				color: #5d5155;
+			}
+
+			.wrapper .container .confirmation form input::-moz-input-placeholder {
+				color: #5d5155;
+			}
+
+			.wrapper .container .confirmation form input:-moz-input-placeholder {
+				color: #5d5155;
+			}
+
+			.wrapper .container .confirmation form input::-ms-input-placeholder {
+				color: #5d5155;
+			}
+			
+			.wrapper .container .confirmation form p {
+				font-size: 1.428571428571429em;	/* ===== font-size: 20px; / 14px; ===== */
+				font-weight: 400;
+				color: #5d5155;
+				text-align: center;
+			}
+			
+			.wrapper .container .confirmation form p strong {
+				font-weight: 600;
+			}
+			
+			.wrapper .container .confirmation form .day {
+				width: 45%;
+				background-size: cover;
+			}
+			
+			.wrapper .container .confirmation form label {
+				cursor: auto;
+				
+				width: 100%;
+				
+				font-size: 25px;
+				font-weight: 400;
+				color: #5d5155;
+				
+				margin-bottom: 4%;	/* ===== adjusted by google chrome ===== */
+			}
+			
+			.wrapper .container .confirmation form button {
+				width: 100%;
+				
+				font-size: 2.142857142857143em;	/* ===== font-size: 30px; / 14px; ===== */
+				font-weight: 700;
+				color: #fff;
+				line-height: normal;
+				text-transform: uppercase;
+				text-shadow: 2px 2px 0px #487e17;
+				
+				background: url('../imgs/ebook-form-btn-bg.png') no-repeat;
+				background-size: 100%;
+				
+				border: none;
+				border-radius: 10px;
+				
+				margin-bottom: 5%;	/* ===== adjusted by google chrome ===== */
+				padding: 3% 0 5% 4%;	/* ===== adjusted by google chrome ===== */
+			}
+			
+			.wrapper .container .confirmation form img {
+				margin-bottom: 3%;	/* ===== adjusted by google chrome ===== */
+			}
+		/* ===== end form ===== */
+			
+			/* ==================== ==================== */
+			
+		/* ===== start footer ===== */
+			.wrapper .container .confirmation .footer-wrapper {
+				position: relative;
+				max-width: 591px;
+				width: 100%;
+				margin: 0 auto;
+				
+				margin-top: 7%;	/* ===== margin-top: 41px; / adjusted by google chrome ===== */
+				padding-bottom: 32% !important;	/* ===== adjusted by google chrome with responsive technique ===== */
+			}
+			
+			.wrapper .container .confirmation .footer-wrapper footer {
+				position: absolute;
+				max-width: 591px;
+				width: 100%;
+				height: 100%;
+				margin: 0 auto;
+				
+				text-align: center;
+				
+				background: url('../imgs/signup-footer-bg.jpg') no-repeat center center;
+				background-size: 100%;
+				
+				padding: 6.7% 0 6.7% 0;	/* ===== padding: 41px 0px 41px 0px; / adjusted by google chrome ===== */
+			}
+			
+			.wrapper .container .confirmation .footer-wrapper footer h1 {
+				font-size: 1.785714285714286em;	/* ===== font-size: 25px; / 14px; ===== */
+				font-weight: 400;
+				color: #fff;
+				
+				margin: 0;
+				margin-bottom: 2%;	/* ===== margin-bottom: 13px; / adjusted by google chrome ===== */
+			}
+			
+			.wrapper .container .confirmation .footer-wrapper footer h1 strong {
+				font-weight: 700;
+			}
+			
+			.wrapper .container .confirmation .footer-wrapper footer h2 {
+				font-size: 2.142857142857143em;	/* ===== font-size: 30px; / 14px; ===== */
+				font-weight: 700;
+				color: #fff;
+				
+				margin: 0;
+				margin-bottom: 2%;	/* ===== margin-bottom: 13px; / adjusted by google chrome ===== */
+			}
+			
+			.wrapper .container .confirmation .footer-wrapper footer h2 img {
+				width: 6.5%;
+			}
+			
+			.wrapper .container .confirmation .footer-wrapper footer h3 {
+				font-size: 1.428571428571429em;	/* ===== font-size: 20px; / 14px; ===== */
+				font-weight: 400;
+				color: #fff;
+				
+				margin: 0;
+			}
+		/* ===== end footer ===== */
+			
+			/* ==================== ==================== */
+			
+	/* ===== end confirmation ===== */
